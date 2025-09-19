@@ -87,4 +87,4 @@ This project is optimized for deployment on Vercel, Netlify, or any platform tha
 ## License
 
 This project is licensed under the MIT License.
-  
+  # Build fix - removed react-day-picker dependency
