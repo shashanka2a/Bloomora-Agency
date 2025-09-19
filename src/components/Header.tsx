@@ -30,8 +30,17 @@ export function Header() {
           <Button variant="ghost" className="hidden sm:inline-flex">
             Sign In
           </Button>
-          <Button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
-            Get Started
+          <Button 
+            asChild
+            className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+          >
+            <a 
+              href="https://calendly.com/5ha5hank/availability" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Get Started
+            </a>
           </Button>
         </div>
       </div>

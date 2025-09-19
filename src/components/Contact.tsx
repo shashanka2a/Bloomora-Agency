@@ -57,9 +57,18 @@ export function Contact() {
               <p className="text-sm text-muted-foreground mb-4">
                 Book a free 30-minute consultation to discuss your project requirements.
               </p>
-              <Button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
-                Schedule Call
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button 
+                asChild
+                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+              >
+                <a 
+                  href="https://calendly.com/5ha5hank/availability" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Schedule Call
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
               </Button>
             </div>
           </div>
