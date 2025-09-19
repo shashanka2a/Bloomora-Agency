@@ -54,14 +54,66 @@ export function Hero() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl opacity-20 blur-3xl"></div>
             <div className="relative bg-white/80 backdrop-blur-sm border rounded-2xl p-8 shadow-2xl">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1736066331155-c95740b0bd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB3b3Jrc3BhY2UlMjBsYXB0b3B8ZW58MXx8fHwxNzU4MTkzNjA1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Modern workspace with laptop showing digital design"
-                className="w-full h-auto rounded-xl shadow-lg"
-                width={800}
-                height={600}
-                priority
-              />
+              <div className="relative w-full h-96 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-lg overflow-hidden">
+                {/* Digital Agency Illustration */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="grid grid-cols-2 gap-4 p-8">
+                    {/* Website Mockup */}
+                    <div className="bg-white rounded-lg shadow-md p-3 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                      <div className="h-2 bg-blue-200 rounded mb-2"></div>
+                      <div className="h-1 bg-gray-200 rounded mb-1"></div>
+                      <div className="h-1 bg-gray-200 rounded mb-1 w-3/4"></div>
+                      <div className="h-1 bg-gray-200 rounded w-1/2"></div>
+                    </div>
+                    
+                    {/* Mobile App Mockup */}
+                    <div className="bg-white rounded-lg shadow-md p-2 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+                      <div className="h-1 bg-purple-200 rounded mb-1"></div>
+                      <div className="h-1 bg-gray-200 rounded mb-1"></div>
+                      <div className="h-1 bg-gray-200 rounded w-2/3"></div>
+                    </div>
+                    
+                    {/* Dashboard Mockup */}
+                    <div className="bg-white rounded-lg shadow-md p-3 transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                      <div className="h-1 bg-green-200 rounded mb-1"></div>
+                      <div className="h-1 bg-gray-200 rounded mb-1"></div>
+                      <div className="h-1 bg-gray-200 rounded mb-1 w-4/5"></div>
+                      <div className="h-1 bg-gray-200 rounded w-3/4"></div>
+                    </div>
+                    
+                    {/* Analytics Chart */}
+                    <div className="bg-white rounded-lg shadow-md p-3 transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+                      <div className="flex items-end space-x-1 h-8">
+                        <div className="w-1 bg-blue-400 rounded-t" style={{height: '60%'}}></div>
+                        <div className="w-1 bg-purple-400 rounded-t" style={{height: '80%'}}></div>
+                        <div className="w-1 bg-green-400 rounded-t" style={{height: '40%'}}></div>
+                        <div className="w-1 bg-orange-400 rounded-t" style={{height: '90%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Floating Elements */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
+                <div className="absolute bottom-4 left-4 w-6 h-6 bg-purple-500 rounded-full opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
+                <div className="absolute top-1/2 left-4 w-4 h-4 bg-green-500 rounded-full opacity-20 animate-pulse" style={{animationDelay: '2s'}}></div>
+                
+                {/* Connection Lines */}
+                <svg className="absolute inset-0 w-full h-full" style={{zIndex: 1}}>
+                  <defs>
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.3"/>
+                      <stop offset="100%" stopColor="#8B5CF6" stopOpacity="0.3"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M 50 50 Q 200 100 350 50" stroke="url(#lineGradient)" strokeWidth="2" fill="none" strokeDasharray="5,5">
+                    <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 100 200 Q 250 150 400 200" stroke="url(#lineGradient)" strokeWidth="2" fill="none" strokeDasharray="5,5">
+                    <animate attributeName="stroke-dashoffset" values="10;0" dur="2s" repeatCount="indefinite"/>
+                  </path>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
