@@ -9,7 +9,7 @@ const projects = [
     title: "SnapEvent",
     description: "Modern event photography platform connecting photographers with event organizers. Features real-time booking, portfolio showcase, and seamless payment processing.",
     category: "Event Platform",
-    image: "https://images.unsplash.com/photo-1632965053624-eea7c66017de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxldmVudCUyMHBob3RvZ3JhcGh5JTIwYXBwfGVufDF8fHx8MTc1ODMxMzg0Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/snapevent.png",
     icon: Camera,
     tags: ["React", "Node.js", "Stripe"],
     gradient: "from-pink-100 to-rose-100"
@@ -19,7 +19,7 @@ const projects = [
     title: "Zipline",
     description: "Advanced logistics dashboard for delivery management. Real-time tracking, route optimization, and comprehensive analytics for fleet operations.",
     category: "Logistics Platform",
-    image: "https://images.unsplash.com/photo-1754765542024-c1320f23b75a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWxpdmVyeSUyMGxvZ2lzdGljcyUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTgzMTM4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/zipline.png",
     icon: Truck,
     tags: ["Vue.js", "Python", "Maps API"],
     gradient: "from-blue-100 to-cyan-100"
@@ -29,7 +29,7 @@ const projects = [
     title: "LoveBeats",
     description: "Music streaming service with personalized playlists and social features. Advanced recommendation engine and collaborative playlist creation.",
     category: "Music Platform",
-    image: "https://images.unsplash.com/photo-1590230851028-843accfaebd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMHN0cmVhbWluZyUyMGludGVyZmFjZXxlbnwxfHx8fDE3NTgzMDk1NDF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/lovebytes.png",
     icon: Music,
     tags: ["React Native", "GraphQL", "AWS"],
     gradient: "from-purple-100 to-violet-100"
@@ -39,7 +39,7 @@ const projects = [
     title: "Home Loan Consulting",
     description: "Comprehensive mortgage consultation platform with loan calculators, document management, and client relationship tools for mortgage brokers.",
     category: "Fintech Solution",
-    image: "https://images.unsplash.com/photo-1626178793926-22b28830aa30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3J0Z2FnZSUyMGZpbmFuY2UlMjBjYWxjdWxhdG9yfGVufDF8fHx8MTc1ODMxMzg0M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/hhc.png",
     icon: Home,
     tags: ["Angular", "C#", "SQL Server"],
     gradient: "from-green-100 to-emerald-100"
@@ -49,7 +49,7 @@ const projects = [
     title: "PayFlow",
     description: "Next-generation payment processing system with multi-currency support, fraud detection, and comprehensive analytics for modern businesses.",
     category: "Payment Gateway",
-    image: "https://images.unsplash.com/photo-1726137065519-c9a1b9eca951?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXltZW50JTIwZmludGVjaCUyMGFwcHxlbnwxfHx8fDE3NTgzMTM4NDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/payflow.png",
     icon: CreditCard,
     tags: ["React", "Blockchain", "Security"],
     gradient: "from-orange-100 to-amber-100"
