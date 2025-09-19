@@ -38,7 +38,7 @@ const logos = [
 export function Testimonials() {
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="container">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Client Logos */}
         <div className="text-center mb-16">
           <p className="text-sm text-muted-foreground mb-8">Trusted by innovative companies</p>

@@ -12,54 +12,59 @@ const projects = [
     image: "/snapevent.png",
     icon: Camera,
     tags: ["React", "Node.js", "Stripe"],
-    gradient: "from-pink-100 to-rose-100"
+    gradient: "from-pink-100 to-rose-100",
+    url: "https://snap-event-landing-page.vercel.app/"
   },
   {
     id: "zipline",
     title: "Zipline",
-    description: "Advanced logistics dashboard for delivery management. Real-time tracking, route optimization, and comprehensive analytics for fleet operations.",
-    category: "Logistics Platform",
+    description: "Florida's longest zipline adventure experience. Adventure booking platform with real-time availability, safety protocols, and seamless booking system.",
+    category: "Adventure Platform",
     image: "/zipline.png",
     icon: Truck,
-    tags: ["Vue.js", "Python", "Maps API"],
-    gradient: "from-blue-100 to-cyan-100"
+    tags: ["Next.js", "React", "Booking API"],
+    gradient: "from-blue-100 to-cyan-100",
+    url: "https://bestzipline-nextjs.vercel.app/"
   },
   {
     id: "lovebeats",
     title: "LoveBeats",
-    description: "Music streaming service with personalized playlists and social features. Advanced recommendation engine and collaborative playlist creation.",
-    category: "Music Platform",
+    description: "Campus dating app for students with .edu verification. Connect through shared music and movie preferences with Sonic-speed matching technology.",
+    category: "Dating Platform",
     image: "/lovebytes.png",
     icon: Music,
-    tags: ["React Native", "GraphQL", "AWS"],
-    gradient: "from-purple-100 to-violet-100"
+    tags: ["React", "ZK Proofs", "Sonic Tech"],
+    gradient: "from-purple-100 to-violet-100",
+    url: "https://lovebeats-landing-page.vercel.app/"
   },
   {
     id: "homeloan",
-    title: "Home Loan Consulting",
-    description: "Comprehensive mortgage consultation platform with loan calculators, document management, and client relationship tools for mortgage brokers.",
+    title: "HHC Home Loan Consulting",
+    description: "Comprehensive home loan consultation platform with competitive rates, expert guidance, and 24-hour pre-approval process for Indian families.",
     category: "Fintech Solution",
     image: "/hhc.png",
     icon: Home,
-    tags: ["Angular", "C#", "SQL Server"],
-    gradient: "from-green-100 to-emerald-100"
+    tags: ["React", "Banking API", "RBI Compliant"],
+    gradient: "from-green-100 to-emerald-100",
+    url: "https://hhc-landing-page.vercel.app/"
   },
   {
     id: "payflow",
     title: "PayFlow",
-    description: "Next-generation payment processing system with multi-currency support, fraud detection, and comprehensive analytics for modern businesses.",
+    description: "Cross-border payment platform for USD to INR transfers. Features real-time exchange rates, bank-grade security, and instant money transfers to India.",
     category: "Payment Gateway",
     image: "/payflow.png",
     icon: CreditCard,
-    tags: ["React", "Blockchain", "Security"],
-    gradient: "from-orange-100 to-amber-100"
+    tags: ["React", "Banking", "RBI Compliant"],
+    gradient: "from-orange-100 to-amber-100",
+    url: "https://pay-flow-app.vercel.app/"
   }
 ];
 
 export function Portfolio() {
   return (
     <section className="py-24 bg-white">
-      <div className="container">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold">Our Work</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -69,10 +74,16 @@ export function Portfolio() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card 
-              key={project.id} 
-              className="group cursor-pointer border-0 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden hover:-translate-y-2"
+            <a 
+              key={project.id}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
             >
+              <Card 
+                className="group cursor-pointer border-0 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden hover:-translate-y-2 h-full"
+              >
               <div className="relative overflow-hidden">
                 <ImageWithFallback
                   src={project.image}
@@ -119,13 +130,19 @@ export function Portfolio() {
                 </div>
 
                 <div className="pt-2 border-t">
-                  <button className="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center group">
-                    View Case Study
+                  <a 
+                    href={project.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center group"
+                  >
+                    View Live Project
                     <ArrowUpRight className="h-3 w-3 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </button>
+                  </a>
                 </div>
               </CardContent>
-            </Card>
+              </Card>
+            </a>
           ))}
         </div>
 

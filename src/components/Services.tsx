@@ -33,7 +33,7 @@ const services = [
 export function Services() {
   return (
     <section id="services" className="py-24 bg-white">
-      <div className="container">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold">Our Services</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -64,6 +64,8 @@ export function Services() {
                     src={service.image}
                     alt={`${service.title} preview`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    width={400}
+                    height={300}
                   />
                 </div>
 
