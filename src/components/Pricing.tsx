@@ -6,7 +6,7 @@ import { Check, Sparkles } from "lucide-react";
 const plans = [
   {
     name: "Starter",
-    price: "$2,999",
+    price: "$1,999",
     period: "one-time",
     description: "Perfect for small businesses looking to establish their digital presence",
     features: [
@@ -23,7 +23,7 @@ const plans = [
   },
   {
     name: "Professional",
-    price: "$7,999",
+    price: "$4,999",
     period: "one-time",
     description: "Ideal for growing businesses that need advanced functionality",
     features: [
