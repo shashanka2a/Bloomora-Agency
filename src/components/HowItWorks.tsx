@@ -54,10 +54,6 @@ export function HowItWorks() {
         <div className="grid lg:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              {/* Connection line */}
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-blue-200 to-purple-200 z-0 transform translate-x-4"></div>
-              )}
               
               <Card className="relative z-10 h-full border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader className="text-center space-y-4">
@@ -92,7 +88,7 @@ export function HowItWorks() {
 
         <div className="text-center mt-16">
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-purple-50 border rounded-full px-6 py-3">
-            <span className="text-sm font-medium">Average project timeline: 4-8 weeks</span>
+            <span className="text-sm font-medium">Average project timeline: 2-4 weeks</span>
           </div>
         </div>
       </div>
