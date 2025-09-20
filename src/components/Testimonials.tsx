@@ -26,30 +26,11 @@ const testimonials = [
   }
 ];
 
-const logos = [
-  { name: "TechFlow", width: "w-24" },
-  { name: "DataViz Pro", width: "w-28" },
-  { name: "CloudScale", width: "w-26" },
-  { name: "InnovateCorp", width: "w-32" },
-  { name: "FutureSync", width: "w-24" },
-  { name: "DigitalFirst", width: "w-30" }
-];
 
 export function Testimonials() {
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Client Logos */}
-        <div className="text-center mb-16">
-          <p className="text-sm text-muted-foreground mb-8">Trusted by innovative companies</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {logos.map((logo, index) => (
-              <div key={index} className={`${logo.width} h-8 bg-gray-300 rounded flex items-center justify-center`}>
-                <span className="text-xs font-medium text-gray-600">{logo.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Testimonials */}
         <div className="text-center space-y-4 mb-16">
