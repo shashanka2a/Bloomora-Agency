@@ -36,7 +36,7 @@ export function Hero() {
 
           <div className="flex items-center justify-center space-x-8 pt-8">
             <div>
-              <div className="text-2xl font-bold">200+</div>
+              <div className="text-2xl font-bold">20+</div>
               <div className="text-sm text-muted-foreground">Projects Delivered</div>
             </div>
             <div>
