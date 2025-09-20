@@ -1,7 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { ArrowUpRight, Camera, Truck, Music, Home, CreditCard } from "lucide-react";
+import { ArrowUpRight, Camera, Truck, Music, Home, CreditCard, ChefHat } from "lucide-react";
 
 const projects = [
   {
@@ -58,6 +58,17 @@ const projects = [
     tags: ["React", "Banking", "RBI Compliant"],
     gradient: "from-orange-100 to-amber-100",
     url: "https://pay-flow-app.vercel.app/"
+  },
+  {
+    id: "josekitchen",
+    title: "Jose Kitchen",
+    description: "Authentic Spanish cuisine website featuring traditional tortillas and paellas. WhatsApp ordering system with free delivery to FIU campus and Miami locals.",
+    category: "Restaurant Website",
+    image: "/josekitchen.png",
+    icon: ChefHat,
+    tags: ["Next.js", "WhatsApp API", "Food Delivery"],
+    gradient: "from-red-100 to-orange-100",
+    url: "https://www.josekitchen.com/"
   }
 ];
 
