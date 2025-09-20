@@ -1,16 +1,18 @@
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { CustomArrowRight, CustomSparkles } from "./icons/CustomIcons";
+import { Web3GL } from "./Web3GL";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-24 sm:py-32">
+      <Web3GL type="floating" className="opacity-30" />
       <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23e0e7ff%22%20fill-opacity%3D%220.3%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
       
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-8">
           <div className="inline-flex items-center space-x-2 bg-white/50 backdrop-blur-sm border rounded-full px-4 py-2 mx-auto">
-            <Sparkles className="h-4 w-4 text-purple-600" />
+            <CustomSparkles className="h-4 w-4 text-purple-600" />
             <span className="text-sm font-medium">Transform your digital presence</span>
           </div>
           
@@ -27,7 +29,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8">
               Start Your Project
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <CustomArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button size="lg" variant="outline" className="border-2">
               View Our Work

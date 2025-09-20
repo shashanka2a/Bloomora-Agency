@@ -1,7 +1,8 @@
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { ArrowUpRight, Camera, Truck, Music, Home, CreditCard, ChefHat } from "lucide-react";
+import { CustomArrowRight, CustomCode, CustomRocket, CustomTrendingUp, CustomShield, CustomZap, CustomChefHat } from "./icons/CustomIcons";
+import { Web3GL } from "./Web3GL";
 
 const projects = [
   {
@@ -10,7 +11,7 @@ const projects = [
     description: "Modern event photography platform connecting photographers with event organizers. Features real-time booking, portfolio showcase, and seamless payment processing.",
     category: "Event Platform",
     image: "/snapevent.png",
-    icon: Camera,
+    icon: CustomCode,
     tags: ["React", "Node.js", "Stripe"],
     gradient: "from-pink-100 to-rose-100",
     url: "https://snap-event-landing-page.vercel.app/"
@@ -21,7 +22,7 @@ const projects = [
     description: "Florida's longest zipline adventure experience. Adventure booking platform with real-time availability, safety protocols, and seamless booking system.",
     category: "Adventure Platform",
     image: "/zipline.png",
-    icon: Truck,
+    icon: CustomRocket,
     tags: ["Next.js", "React", "Booking API"],
     gradient: "from-blue-100 to-cyan-100",
     url: "https://bestzipline-nextjs.vercel.app/"
@@ -32,7 +33,7 @@ const projects = [
     description: "Campus dating app for students with .edu verification. Connect through shared music and movie preferences with Sonic-speed matching technology.",
     category: "Dating Platform",
     image: "/lovebytes.png",
-    icon: Music,
+    icon: CustomTrendingUp,
     tags: ["React", "ZK Proofs", "Sonic Tech"],
     gradient: "from-purple-100 to-violet-100",
     url: "https://lovebeats-landing-page.vercel.app/"
@@ -43,7 +44,7 @@ const projects = [
     description: "Comprehensive home loan consultation platform with competitive rates, expert guidance, and 24-hour pre-approval process for Indian families.",
     category: "Fintech Solution",
     image: "/hhc.png",
-    icon: Home,
+    icon: CustomShield,
     tags: ["React", "Banking API", "RBI Compliant"],
     gradient: "from-green-100 to-emerald-100",
     url: "https://hhc-landing-page.vercel.app/"
@@ -54,7 +55,7 @@ const projects = [
     description: "Cross-border payment platform for USD to INR transfers. Features real-time exchange rates, bank-grade security, and instant money transfers to India.",
     category: "Payment Gateway",
     image: "/payflow.png",
-    icon: CreditCard,
+    icon: CustomZap,
     tags: ["React", "Banking", "RBI Compliant"],
     gradient: "from-orange-100 to-amber-100",
     url: "https://pay-flow-app.vercel.app/"
@@ -65,7 +66,7 @@ const projects = [
     description: "Authentic Spanish cuisine website featuring traditional tortillas and paellas. WhatsApp ordering system with free delivery to FIU campus and Miami locals.",
     category: "Restaurant Website",
     image: "/josekitchen.png",
-    icon: ChefHat,
+    icon: CustomChefHat,
     tags: ["Next.js", "WhatsApp API", "Food Delivery"],
     gradient: "from-red-100 to-orange-100",
     url: "https://www.josekitchen.com/"
@@ -74,8 +75,9 @@ const projects = [
 
 export function Portfolio() {
   return (
-    <section id="portfolio" className="py-24 bg-white">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="py-24 bg-white relative">
+      <Web3GL type="particles" className="opacity-15" />
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold">Our Work</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -109,7 +111,7 @@ export function Portfolio() {
                 </div>
                 <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center">
-                    <ArrowUpRight className="h-4 w-4 text-gray-700" />
+                    <CustomArrowRight className="h-4 w-4 text-gray-700" />
                   </div>
                 </div>
                 <div className="absolute bottom-4 left-4">
@@ -148,7 +150,7 @@ export function Portfolio() {
                     className="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center group"
                   >
                     View Live Project
-                    <ArrowUpRight className="h-3 w-3 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <CustomArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
                 </div>
               </CardContent>
@@ -160,7 +162,7 @@ export function Portfolio() {
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-purple-50 border rounded-full px-6 py-3">
             <span className="text-sm font-medium">Want to see more? View our complete portfolio</span>
-            <ArrowUpRight className="h-4 w-4 text-blue-600" />
+            <CustomArrowRight className="h-4 w-4 text-blue-600" />
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Star } from "lucide-react";
+import { CustomStar } from "./icons/CustomIcons";
+import { Web3GL } from "./Web3GL";
 
 const testimonials = [
   {
@@ -29,8 +30,9 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50 relative">
+      <Web3GL type="floating" className="opacity-20" />
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 
         {/* Testimonials */}
         <div className="text-center space-y-4 mb-16">
@@ -46,7 +48,7 @@ export function Testimonials() {
               <CardContent className="p-6 space-y-4">
                 <div className="flex space-x-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <CustomStar key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
                 
