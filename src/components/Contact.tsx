@@ -42,7 +42,7 @@ export function Contact() {
                   className="w-full bg-red-500 hover:bg-red-600 text-white"
                 >
                   <a 
-                    href="sms:+1234567890" 
+                    href="sms:+13523286426" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
