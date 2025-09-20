@@ -12,11 +12,11 @@ export function Header() {
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
+          <a href="#portfolio" className="text-muted-foreground hover:text-foreground transition-colors">
+            Our Work
+          </a>
           <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">
             Services
-          </a>
-          <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
-            How it Works
           </a>
           <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
             Pricing
