@@ -6,15 +6,15 @@ import { Web3GL } from "./Web3GL";
 
 const projects = [
   {
-    id: "snapevent",
-    title: "SnapEvent",
-    description: "Modern event photography platform connecting photographers with event organizers. Features real-time booking, portfolio showcase, and seamless payment processing.",
-    category: "Event Platform",
-    image: "/snapevent.png",
-    icon: CustomCode,
-    tags: ["React", "Node.js", "Stripe"],
-    gradient: "from-pink-100 to-rose-100",
-    url: "https://snap-event-landing-page.vercel.app/"
+    id: "josekitchen",
+    title: "Jose Kitchen",
+    description: "Authentic Spanish cuisine website featuring traditional tortillas and paellas. WhatsApp ordering system with free delivery to FIU campus and Miami locals.",
+    category: "Restaurant Website",
+    image: "/josekitchen.png",
+    icon: CustomChefHat,
+    tags: ["Next.js", "WhatsApp API", "Food Delivery"],
+    gradient: "from-red-100 to-orange-100",
+    url: "https://www.josekitchen.com/"
   },
   {
     id: "zipline",
@@ -39,6 +39,17 @@ const projects = [
     url: "https://lovebeats-landing-page.vercel.app/"
   },
   {
+    id: "snapevent",
+    title: "SnapEvent",
+    description: "Modern event photography platform connecting photographers with event organizers. Features real-time booking, portfolio showcase, and seamless payment processing.",
+    category: "Event Platform",
+    image: "/snapevent.png",
+    icon: CustomCode,
+    tags: ["React", "Node.js", "Stripe"],
+    gradient: "from-pink-100 to-rose-100",
+    url: "https://snap-event-landing-page.vercel.app/"
+  },
+  {
     id: "homeloan",
     title: "HHC Home Loan Consulting",
     description: "Comprehensive home loan consultation platform with competitive rates, expert guidance, and 24-hour pre-approval process for Indian families.",
@@ -59,17 +70,6 @@ const projects = [
     tags: ["React", "Banking", "RBI Compliant"],
     gradient: "from-orange-100 to-amber-100",
     url: "https://pay-flow-app.vercel.app/"
-  },
-  {
-    id: "josekitchen",
-    title: "Jose Kitchen",
-    description: "Authentic Spanish cuisine website featuring traditional tortillas and paellas. WhatsApp ordering system with free delivery to FIU campus and Miami locals.",
-    category: "Restaurant Website",
-    image: "/josekitchen.png",
-    icon: CustomChefHat,
-    tags: ["Next.js", "WhatsApp API", "Food Delivery"],
-    gradient: "from-red-100 to-orange-100",
-    url: "https://www.josekitchen.com/"
   }
 ];
 
