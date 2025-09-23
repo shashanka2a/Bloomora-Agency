@@ -1,6 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { CustomCode, CustomPalette, CustomRocket, CustomTrendingUp, CustomShield, CustomZap, CustomArrowRight } from "./icons/CustomIcons";
+import { CustomCode, CustomPalette, CustomRocket, CustomTrendingUp, CustomShield, CustomZap, CustomArrowRight, CustomWebsiteIllustration, CustomSaaSIllustration, CustomAnalyticsIllustration } from "./icons/CustomIcons";
 import { Button } from "./ui/button";
 import { Web3GL } from "./Web3GL";
 
@@ -9,7 +8,7 @@ const services = [
     icon: CustomCode,
     title: "Custom Websites",
     description: "Beautiful, responsive websites that capture your brand and convert visitors into customers.",
-    image: "https://images.unsplash.com/photo-1610989001873-03968eed0f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwZGVzaWduJTIwbW9ja3VwfGVufDF8fHx8MTc1ODI4NzgzNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    illustration: CustomWebsiteIllustration,
     features: ["Responsive Design", "SEO Optimized", "Fast Loading", "CMS Integration"],
     gradient: "from-blue-100 to-cyan-100"
   },
@@ -17,7 +16,7 @@ const services = [
     icon: CustomRocket,
     title: "SaaS Tools",
     description: "Scalable software solutions that streamline operations and accelerate business growth.",
-    image: "https://images.unsplash.com/photo-1591381287254-b3349c60bf9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWFzJTIwc29mdHdhcmUlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU4MzEzNTkwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    illustration: CustomSaaSIllustration,
     features: ["Cloud Native", "API Integration", "User Management", "Real-time Updates"],
     gradient: "from-purple-100 to-pink-100"
   },
@@ -25,7 +24,7 @@ const services = [
     icon: CustomTrendingUp,
     title: "Analytics Dashboards",
     description: "Data-driven dashboards that transform complex metrics into actionable insights.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBzY3JlZW58ZW58MXx8fHwxNzU4Mjg0NzM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    illustration: CustomAnalyticsIllustration,
     features: ["Real-time Data", "Custom Reports", "Interactive Charts", "Export Options"],
     gradient: "from-green-100 to-emerald-100"
   }
@@ -61,14 +60,8 @@ export function Services() {
               </CardHeader>
 
               <CardContent className="space-y-6">
-                <div className="aspect-video rounded-lg overflow-hidden">
-                  <ImageWithFallback
-                    src={service.image}
-                    alt={`${service.title} preview`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    width={400}
-                    height={300}
-                  />
+                <div className="aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-4">
+                  <service.illustration className="w-full h-full" />
                 </div>
 
                 <ul className="space-y-2">

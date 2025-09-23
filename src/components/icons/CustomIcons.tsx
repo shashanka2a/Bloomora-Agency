@@ -263,3 +263,246 @@ export const CustomChefHat = ({ className = "w-4 h-4", size }: IconProps) => (
     />
   </svg>
 );
+
+// Domain-specific portfolio icons
+export const CustomRestaurant = ({ className = "w-4 h-4", size }: IconProps) => (
+  <svg 
+    width={size || 16} 
+    height={size || 16} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    className={className}
+  >
+    <path 
+      d="M3 2v7c0 1.1.9 2 2 2h4v11a1 1 0 0 0 2 0V11h4c1.1 0 2-.9 2-2V2H3z" 
+      fill="currentColor"
+    />
+    <path 
+      d="M19 2v20h2V2h-2z" 
+      fill="currentColor"
+    />
+    <circle cx="8" cy="6" r="1" fill="white"/>
+    <circle cx="12" cy="6" r="1" fill="white"/>
+  </svg>
+);
+
+export const CustomAdventure = ({ className = "w-4 h-4", size }: IconProps) => (
+  <svg 
+    width={size || 16} 
+    height={size || 16} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    className={className}
+  >
+    <path 
+      d="M12 2L2 7l10 5 10-5-10-5z" 
+      fill="currentColor"
+    />
+    <path 
+      d="M2 17l10 5 10-5M2 12l10 5 10-5" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round"
+      fill="none"
+    />
+    <circle cx="12" cy="7" r="2" fill="white"/>
+  </svg>
+);
+
+export const CustomDating = ({ className = "w-4 h-4", size }: IconProps) => (
+  <svg 
+    width={size || 16} 
+    height={size || 16} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    className={className}
+  >
+    <path 
+      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" 
+      fill="currentColor"
+    />
+    <circle cx="12" cy="12" r="3" fill="white"/>
+  </svg>
+);
+
+export const CustomEvent = ({ className = "w-4 h-4", size }: IconProps) => (
+  <svg 
+    width={size || 16} 
+    height={size || 16} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    className={className}
+  >
+    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <circle cx="8" cy="15" r="1" fill="currentColor"/>
+    <circle cx="12" cy="15" r="1" fill="currentColor"/>
+    <circle cx="16" cy="15" r="1" fill="currentColor"/>
+  </svg>
+);
+
+export const CustomFintech = ({ className = "w-4 h-4", size }: IconProps) => (
+  <svg 
+    width={size || 16} 
+    height={size || 16} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    className={className}
+  >
+    <rect x="1" y="4" width="22" height="16" rx="2" ry="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+    <line x1="1" y1="10" x2="23" y2="10" stroke="currentColor" strokeWidth="2"/>
+    <circle cx="6" cy="7" r="1" fill="currentColor"/>
+    <circle cx="9" cy="7" r="1" fill="currentColor"/>
+    <circle cx="12" cy="7" r="1" fill="currentColor"/>
+    <path d="M16 13h4M16 16h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+  </svg>
+);
+
+export const CustomPayment = ({ className = "w-4 h-4", size }: IconProps) => (
+  <svg 
+    width={size || 16} 
+    height={size || 16} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    className={className}
+  >
+    <rect x="1" y="4" width="22" height="16" rx="2" ry="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+    <line x1="1" y1="10" x2="23" y2="10" stroke="currentColor" strokeWidth="2"/>
+    <circle cx="6" cy="7" r="1" fill="currentColor"/>
+    <circle cx="9" cy="7" r="1" fill="currentColor"/>
+    <circle cx="12" cy="7" r="1" fill="currentColor"/>
+    <path d="M16 13h4M16 16h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M18 2l3 3-3 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+// Service illustrations as SVG components
+export const CustomWebsiteIllustration = ({ className = "w-full h-full", size }: IconProps) => (
+  <svg 
+    width={size || 400} 
+    height={size || 300} 
+    viewBox="0 0 400 300" 
+    fill="none" 
+    className={className}
+  >
+    {/* Browser window */}
+    <rect x="20" y="20" width="360" height="260" rx="8" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="2"/>
+    <rect x="20" y="20" width="360" height="40" rx="8" fill="#e2e8f0"/>
+    
+    {/* Browser controls */}
+    <circle cx="40" cy="40" r="6" fill="#ef4444"/>
+    <circle cx="60" cy="40" r="6" fill="#f59e0b"/>
+    <circle cx="80" cy="40" r="6" fill="#10b981"/>
+    
+    {/* Content area */}
+    <rect x="40" y="80" width="320" height="180" rx="4" fill="white" stroke="#e2e8f0"/>
+    
+    {/* Header */}
+    <rect x="60" y="100" width="280" height="20" rx="2" fill="#3b82f6"/>
+    <rect x="60" y="130" width="200" height="12" rx="2" fill="#6b7280"/>
+    
+    {/* Content blocks */}
+    <rect x="60" y="160" width="80" height="60" rx="4" fill="#f3f4f6"/>
+    <rect x="160" y="160" width="80" height="60" rx="4" fill="#f3f4f6"/>
+    <rect x="260" y="160" width="80" height="60" rx="4" fill="#f3f4f6"/>
+    
+    {/* Mobile device */}
+    <rect x="300" y="100" width="60" height="100" rx="8" fill="#1f2937" stroke="#374151" strokeWidth="2"/>
+    <rect x="305" y="105" width="50" height="90" rx="4" fill="white"/>
+    <rect x="310" y="115" width="40" height="8" rx="2" fill="#3b82f6"/>
+    <rect x="310" y="130" width="30" height="4" rx="1" fill="#9ca3af"/>
+    <rect x="310" y="140" width="35" height="4" rx="1" fill="#9ca3af"/>
+    <rect x="310" y="150" width="25" height="4" rx="1" fill="#9ca3af"/>
+  </svg>
+);
+
+export const CustomSaaSIllustration = ({ className = "w-full h-full", size }: IconProps) => (
+  <svg 
+    width={size || 400} 
+    height={size || 300} 
+    viewBox="0 0 400 300" 
+    fill="none" 
+    className={className}
+  >
+    {/* Cloud infrastructure */}
+    <ellipse cx="200" cy="80" rx="120" ry="40" fill="#dbeafe" stroke="#3b82f6" strokeWidth="2"/>
+    <ellipse cx="180" cy="70" rx="20" ry="15" fill="#3b82f6"/>
+    <ellipse cx="220" cy="70" rx="20" ry="15" fill="#3b82f6"/>
+    
+    {/* Server racks */}
+    <rect x="80" y="140" width="60" height="120" rx="4" fill="#374151" stroke="#1f2937" strokeWidth="2"/>
+    <rect x="90" y="150" width="40" height="8" rx="2" fill="#10b981"/>
+    <rect x="90" y="165" width="40" height="8" rx="2" fill="#10b981"/>
+    <rect x="90" y="180" width="40" height="8" rx="2" fill="#10b981"/>
+    <rect x="90" y="195" width="40" height="8" rx="2" fill="#10b981"/>
+    
+    <rect x="260" y="140" width="60" height="120" rx="4" fill="#374151" stroke="#1f2937" strokeWidth="2"/>
+    <rect x="270" y="150" width="40" height="8" rx="2" fill="#10b981"/>
+    <rect x="270" y="165" width="40" height="8" rx="2" fill="#10b981"/>
+    <rect x="270" y="180" width="40" height="8" rx="2" fill="#10b981"/>
+    <rect x="270" y="195" width="40" height="8" rx="2" fill="#10b981"/>
+    
+    {/* Database */}
+    <ellipse cx="200" cy="200" rx="40" ry="20" fill="#f59e0b" stroke="#d97706" strokeWidth="2"/>
+    <rect x="160" y="200" width="80" height="40" rx="4" fill="#f59e0b" stroke="#d97706" strokeWidth="2"/>
+    <ellipse cx="200" cy="240" rx="40" ry="20" fill="#f59e0b" stroke="#d97706" strokeWidth="2"/>
+    
+    {/* Connection lines */}
+    <path d="M140 160 Q170 180 200 200" stroke="#6b7280" strokeWidth="2" fill="none" strokeDasharray="5,5"/>
+    <path d="M260 160 Q230 180 200 200" stroke="#6b7280" strokeWidth="2" fill="none" strokeDasharray="5,5"/>
+    <path d="M200 120 Q200 160 200 200" stroke="#6b7280" strokeWidth="2" fill="none" strokeDasharray="5,5"/>
+  </svg>
+);
+
+export const CustomAnalyticsIllustration = ({ className = "w-full h-full", size }: IconProps) => (
+  <svg 
+    width={size || 400} 
+    height={size || 300} 
+    viewBox="0 0 400 300" 
+    fill="none" 
+    className={className}
+  >
+    {/* Dashboard frame */}
+    <rect x="20" y="20" width="360" height="260" rx="8" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="2"/>
+    
+    {/* Header */}
+    <rect x="40" y="40" width="320" height="40" rx="4" fill="#1f2937"/>
+    <rect x="50" y="50" width="100" height="20" rx="2" fill="#3b82f6"/>
+    
+    {/* Chart area */}
+    <rect x="40" y="100" width="320" height="120" rx="4" fill="white" stroke="#e2e8f0"/>
+    
+    {/* Bar chart */}
+    <rect x="60" y="180" width="20" height="30" fill="#3b82f6"/>
+    <rect x="90" y="160" width="20" height="50" fill="#10b981"/>
+    <rect x="120" y="140" width="20" height="70" fill="#f59e0b"/>
+    <rect x="150" y="120" width="20" height="90" fill="#ef4444"/>
+    <rect x="180" y="150" width="20" height="60" fill="#8b5cf6"/>
+    <rect x="210" y="170" width="20" height="40" fill="#06b6d4"/>
+    
+    {/* Line chart */}
+    <path d="M60 200 Q90 180 120 160 Q150 140 180 120 Q210 150 240 170 Q270 190 300 180" 
+          stroke="#3b82f6" strokeWidth="3" fill="none"/>
+    <circle cx="60" cy="200" r="3" fill="#3b82f6"/>
+    <circle cx="120" cy="160" r="3" fill="#3b82f6"/>
+    <circle cx="180" cy="120" r="3" fill="#3b82f6"/>
+    <circle cx="240" cy="170" r="3" fill="#3b82f6"/>
+    <circle cx="300" cy="180" r="3" fill="#3b82f6"/>
+    
+    {/* KPI cards */}
+    <rect x="40" y="240" width="100" height="30" rx="4" fill="white" stroke="#e2e8f0"/>
+    <rect x="50" y="250" width="80" height="8" rx="2" fill="#10b981"/>
+    <rect x="50" y="260" width="60" height="4" rx="1" fill="#6b7280"/>
+    
+    <rect x="150" y="240" width="100" height="30" rx="4" fill="white" stroke="#e2e8f0"/>
+    <rect x="160" y="250" width="80" height="8" rx="2" fill="#f59e0b"/>
+    <rect x="160" y="260" width="60" height="4" rx="1" fill="#6b7280"/>
+    
+    <rect x="260" y="240" width="100" height="30" rx="4" fill="white" stroke="#e2e8f0"/>
+    <rect x="270" y="250" width="80" height="8" rx="2" fill="#ef4444"/>
+    <rect x="270" y="260" width="60" height="4" rx="1" fill="#6b7280"/>
+  </svg>
+);

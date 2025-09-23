@@ -1,7 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { CustomArrowRight, CustomCode, CustomRocket, CustomTrendingUp, CustomShield, CustomZap, CustomChefHat } from "./icons/CustomIcons";
+import { CustomArrowRight, CustomRestaurant, CustomAdventure, CustomDating, CustomEvent, CustomFintech, CustomPayment } from "./icons/CustomIcons";
 import { Web3GL } from "./Web3GL";
 
 const projects = [
@@ -11,7 +11,7 @@ const projects = [
     description: "Authentic Spanish cuisine website featuring traditional tortillas and paellas. WhatsApp ordering system with free delivery to FIU campus and Miami locals.",
     category: "Restaurant Website",
     image: "/josekitchen.png",
-    icon: CustomChefHat,
+    icon: CustomRestaurant,
     tags: ["Next.js", "WhatsApp API", "Food Delivery"],
     gradient: "from-red-100 to-orange-100",
     url: "https://www.josekitchen.com/"
@@ -22,7 +22,7 @@ const projects = [
     description: "Florida's longest zipline adventure experience. Adventure booking platform with real-time availability, safety protocols, and seamless booking system.",
     category: "Adventure Platform",
     image: "/zipline.png",
-    icon: CustomRocket,
+    icon: CustomAdventure,
     tags: ["Next.js", "React", "Booking API"],
     gradient: "from-blue-100 to-cyan-100",
     url: "https://bestzipline-nextjs.vercel.app/"
@@ -33,7 +33,7 @@ const projects = [
     description: "Campus dating app for students with .edu verification. Connect through shared music and movie preferences with Sonic-speed matching technology.",
     category: "Dating Platform",
     image: "/lovebytes.png",
-    icon: CustomTrendingUp,
+    icon: CustomDating,
     tags: ["React", "ZK Proofs", "Sonic Tech"],
     gradient: "from-purple-100 to-violet-100",
     url: "https://lovebeats-landing-page.vercel.app/"
@@ -44,7 +44,7 @@ const projects = [
     description: "Modern event photography platform connecting photographers with event organizers. Features real-time booking, portfolio showcase, and seamless payment processing.",
     category: "Event Platform",
     image: "/snapevent.png",
-    icon: CustomCode,
+    icon: CustomEvent,
     tags: ["React", "Node.js", "Stripe"],
     gradient: "from-pink-100 to-rose-100",
     url: "https://snap-event-landing-page.vercel.app/"
@@ -55,7 +55,7 @@ const projects = [
     description: "Comprehensive home loan consultation platform with competitive rates, expert guidance, and 24-hour pre-approval process for Indian families.",
     category: "Fintech Solution",
     image: "/hhc.png",
-    icon: CustomShield,
+    icon: CustomFintech,
     tags: ["React", "Banking API", "RBI Compliant"],
     gradient: "from-green-100 to-emerald-100",
     url: "https://hhc-landing-page.vercel.app/"
@@ -66,7 +66,7 @@ const projects = [
     description: "Cross-border payment platform for USD to INR transfers. Features real-time exchange rates, bank-grade security, and instant money transfers to India.",
     category: "Payment Gateway",
     image: "/payflow.png",
-    icon: CustomZap,
+    icon: CustomPayment,
     tags: ["React", "Banking", "RBI Compliant"],
     gradient: "from-orange-100 to-amber-100",
     url: "https://pay-flow-app.vercel.app/"
